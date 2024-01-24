@@ -13,4 +13,4 @@ $produit2 = new Produit('Chocolat', 'Chocolat Neslet douteux', 28);
 
 $livre1 = new Livre('Gatsby le Magnifique', 'Un chef-d\'oeuvre sur un milliardaire qui perd tout par amour', 15, 'F.Scott Fitzgerald');
 
-var_dump($livre1->calculerPrixTotal(100));
+var_dump($livre1->calculerPrixTotal(-100));

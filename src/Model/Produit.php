@@ -15,9 +15,8 @@ class Produit implements Affichable
         if ($taxe > 0) {
             $divide = $taxe / 100;
             return ($this->prix * $divide) + $this->prix;
-        } else {
-            throw new \Exception('Erreur ! La taxe saisie est négative !');
         }
+        return throw new \Exception('Erreur ! La taxe saisie est négative !');
     }
     public function afficher() {}
 }
